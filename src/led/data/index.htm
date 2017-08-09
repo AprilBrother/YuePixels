@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YuePixels</title>
+<link rel="icon" href="data:;base64,=">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" type="text/css" href="style/player.css">
+<script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+<div id="main">
+    <div class="header">
+        <h1>YuePixels</h1>
+        <h2>Play music</h2>
+    </div>
+
+    <div class="content">
+        <div class="pure-menu pure-menu-horizontal">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-selected"><a href="/" class="pure-menu-link">Play</a></li>
+                <li class="pure-menu-item"><a href="/wifi.htm" class="pure-menu-link">WiFi Configure</a></li>
+                <li class="pure-menu-item"><a href="/update" class="pure-menu-link">OTA</a></li>
+            </ul>
+        </div>
+
+        <div id="player">
+            <div id="playpause"> </div>
+        </div>
+        <div>&nbsp;</div>
+        <ul id="playlist">
+            <li class="songs"><input style="opacity:0" type="file" id="choosefiles" multiple></li>
+        </ul>
+        <div align="center">
+            <form class="pure-form">
+            <select id="selColumn">
+                <option value="8">8 columns</option>
+                <option value="4">4 columns</option>
+                <option value="12">12 columns</option>
+                <option value="16">16 columns</option>
+            </select>
+            <select id="selRow">
+                <option value="8">8 rows</option>
+                <option value="4">4 rows</option>
+                <option value="12">12 rows</option>
+            </select>
+            <select id="selFrame">
+                <option value="60">60 frames</option>
+                <option value="50">50 frames</option>
+                <option value="40">40 frames</option>
+                <option value="30">30 frames</option>
+                <option value="20">20 frames</option>
+                <option value="10">10 frames</option>
+            </select>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/player.js"></script>
+</body>
+</html>

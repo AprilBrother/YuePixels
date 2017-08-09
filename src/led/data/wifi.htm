@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>YuePixels</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/style/style.css">
+<script src="/js/jquery.js"></script>
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="header">
+            <h1>YuePixels</h1>
+            <h2>WiFi Configure</h2>
+        </div>
+
+        <div class="content">
+        <div class="pure-menu pure-menu-horizontal">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="/" class="pure-menu-link">Play</a></li>
+                <li class="pure-menu-item pure-menu-selected"><a href="/wifi.htm" class="pure-menu-link">WiFi Configure</a></li>
+            </ul>
+        </div>
+
+        <form name="wifiform" action="connect.cgi" method="post" class="pure-form">
+        <p>
+        To connect to a WiFi network, please input the network...
+        </p>
+
+        <p>
+        <input type="text" name="ssid" val="%WiFiSSID%" placeholder="WiFi SSID" class="pure-input-2-3">
+        </p>
+
+        <p>
+        <input type="text" minlength="8" name="pass" val="%WiFiPasswd%" placeholder="WiFi password, if applicable" class="pure-input-2-3">
+        </p>
+
+        <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Connect</button>
+        </form>
+        </div>
+    </div>
+
+</body>
+</html>

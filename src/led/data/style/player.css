@@ -1,0 +1,39 @@
+
+#player #playpause:hover{background-image:url(audio-sprite.png),-moz-linear-gradient(top,#f2f2f2 0,#e5e5e5 100%);background-image:url(audio-sprite.png),-webkit-gradient(linear,left top,left bottom,color-stop(0%,#f2f2f2),color-stop(100%,#e5e5e5));background-image:url(audio-sprite.png),-webkit-linear-gradient(top,#f2f2f2 0,#e5e5e5 100%);background-image:url(audio-sprite.png),-o-linear-gradient(top,#f2f2f2 0,#e5e5e5 100%);background-image:url(audio-sprite.png),-ms-linear-gradient(top,#f2f2f2 0,#e5e5e5 100%);background-image:url(audio-sprite.png),linear-gradient(top,#f2f2f2 0,#e5e5e5 100%);filter:progid:dximagetransform.microsoft.gradient(startColorstr='#f2f2f2',endColorstr='#e5e5e5',GradientType=0);border:1px solid #666;background-position:5px 0}
+
+#playpause{cursor:pointer;border:1px solid #ddd;margin:20px auto;height:40px;width:40px;padding:5px;background-image:url(audio-sprite.png);background-position:5px 0;-webkit-transition:background-position .35s ease-in-out;-o-transition:background-position .35s ease-in-out;-moz-transition:background-position .35s ease-in-out;transition:background-position .35s ease-in-out;-webkit-box-reflect:below 1px -webkit-linear-gradient(top,transparent 60%,rgba(0,0,0,0.4) 100%);-moz-box-shadow:0 1px 0 #fff;-webkit-box-shadow:0 1px 0 #fff;box-shadow:0 1px 0 #fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px; box-sizing:content-box;}
+
+
+#player #playpause.playing{background-position:-35px 0;border-color:#888 #AAA #CCC;-moz-box-shadow:inset 0 1px 5px rgba(0,0,0,0.25),0 1px 0 #fff;-ms-box-shadow:inset 0 1px 5px rgba(0,0,0,0.25),0 1px 0 #fff;-webkit-box-shadow:inset 0 1px 5px rgba(0,0,0,0.25),0 1px 0 #fff;box-shadow:inset 0 1px 5px rgba(0,0,0,0.25),0 1px 0 #fff;background-image:url(audio-sprite.png),-moz-linear-gradient(top,#c8c8c8 0,#e6e6e6 100%);background-image:url(audio-sprite.png),-ms-linear-gradient(top,#c8c8c8 0,#e6e6e6 100%);background-image:url(audio-sprite.png),-o-linear-gradient(top,#c8c8c8 0,#e6e6e6 100%);background-image:url(audio-sprite.png),-webkit-gradient(linear,left top,left bottom,color-stop(0,#c8c8c8),color-stop(100%,#e6e6e6));background-image:url(audio-sprite.png),-webkit-linear-gradient(top,#c8c8c8 -5px,#e6e6e6 100%);background-image:url(audio-sprite.png),linear-gradient(to bottom,#c8c8c8 0,#e6e6e6 100%);filter:progid:dximagetransform.microsoft.gradient(GradientType=0,StartColorStr=#c8c8c8,EndColorStr=#e6e6e6)}
+
+#playlist li.songs::before {content:"Select songs to play";position:absolute;top:7px;left:80px;text-transform:uppercase;font-size:11px;color:#888}
+
+#playlist{width:300px;background:white;border:1px solid #888;margin:0 auto 30px;padding:0;list-style:none;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
+#playlist.loading{height:300px;background:#fff}
+#playlist li{padding:3px;border:1px solid #ccc;cursor:pointer;margin:5px;position:relative;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fefefe),color-stop(1,#fafafa));background-image:-webkit-linear-gradient(#fefefe,#fafafa);background-image:-moz-linear-gradient(#fefefe,#fafafa);background-image:-o-linear-gradient(#fefefe,#fafafa);background-image:-ms-linear-gradient(#fefefe,#fafafa);filter:progid:dximagetransform.microsoft.gradient(startColorstr='#FEFEFE',endColorstr='#FAFAFA');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#FAFAFA')";-webkit-transition:background-image .1s ease-in-out;-o-transition:background-image .1s ease-in-out;-moz-transition:background-image .1s ease-in-out;transition:background-image .1s ease-in-out;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+#playlist li .loaded {display:none}
+#playlist li:hover {background:#e8e8e8;}
+#playlist li.active {padding-left:20px;background:#e8e8e8;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#f6f6f6),color-stop(1,#efefef));background-image:-webkit-linear-gradient(#f6f6f6,#efefef);background-image:-moz-linear-gradient(#f6f6f6,#efefef);background-image:-o-linear-gradient(#f6f6f6,#efefef);background-image:-ms-linear-gradient(#f6f6f6,#efefef);filter:progid:dximagetransform.microsoft.gradient(startColorstr='#f6f6f6',endColorstr='#efefef');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#efefef')"}
+#playlist li.active .loaded{display:block}
+#playlist li.active::before {content:"";background:url(audio-sprite.png);left:0;position:absolute;height:25px;width:20px;background-size:60px 40px;top:1px}
+#playlist li .loaded{float:right;font-size:11px;margin-top:2px;margin-right:3px;padding:2px;padding-bottom:1px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background:white}
+#playlist li.songs{position:relative;background:#f7f7f7;position:relative;-moz-box-shadow:inset 1px 1px 3px #ddd;-webkit-box-shadow:inset 1px 1px 3px #ddd;box-shadow:inset 1px 1px 3px #ddd}
+#playlist li.songs:hover{background:#f2f2f2}
+#playlist li.songs::before {position:absolute;top:7px;left:80px;text-transform:uppercase;font-size:11px;color:#888;}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+
+audio:not([controls]){display:none}
+#player{opacity:0;-webkit-transition:opacity .35s ease-in-out;-o-transition:opacity .35s ease-in-out;-moz-transition:opacity .35s ease-in-out;transition:opacity .35s ease-in-out}
+#stop{background-position:-91px -96px;background-image:url(audio-sprite.png);height:20px;width:20px;margin:0 auto;position:relative;left:-70px;top:-74px;cursor:pointer}
+@keyframes glow{0%{-moz-box-shadow:0 0 10px #aaa;-webkit-box-shadow:0 0 10px #aaa;box-shadow:0 0 10px #aaa}
+50% {-moz-box-shadow:0 0 20px #aaa;-webkit-box-shadow:0 0 20px #aaa;box-shadow:0 0 20px #aaa}
+100% {-moz-box-shadow:0 0 10px #aaa;-webkit-box-shadow:0 0 10px #aaa;box-shadow:0 0 10px #aaa}
+}
+@-moz-keyframes glow{0%{-moz-box-shadow:0 0 10px #aaa;-webkit-box-shadow:0 0 10px #aaa;box-shadow:0 0 10px #aaa}
+50%{-moz-box-shadow:0 0 20px #aaa;-webkit-box-shadow:0 0 20px #aaa;box-shadow:0 0 20px #aaa}
+100%{-moz-box-shadow:0 0 10px #aaa;-webkit-box-shadow:0 0 10px #aaa;box-shadow:0 0 10px #aaa}
+}
+@-webkit-keyframes glow{0%{-moz-box-shadow:0 0 10px #aaa;-webkit-box-shadow:0 0 10px #aaa;box-shadow:0 0 10px #aaa}
+50%{-moz-box-shadow:0 0 20px #aaa;-webkit-box-shadow:0 0 20px #aaa;box-shadow:0 0 20px #aaa}
+100%{-moz-box-shadow:0 0 10px #aaa;-webkit-box-shadow:0 0 10px #aaa;box-shadow:0 0 10px #aaa}
+}
